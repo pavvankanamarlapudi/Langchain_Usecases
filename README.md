@@ -26,6 +26,30 @@ This guide provides step-by-step instructions on how to set up Python 3.9, gener
 3. Enter `OPENAI_API_KEY` as the variable name and paste your copied OpenAI API key as the variable value.
 4. Click OK to close all windows.
 
+## Creating and Activating a Virtual Environment
+
+Before installing the project's dependencies, it's a good practice to create a virtual environment. This keeps your dependencies separate from those of other projects and the system.
+
+1. Open a command prompt or terminal.
+2. Navigate to your project directory where you want to set up the virtual environment.
+3. Run the following command to create a virtual environment named `venv`:
+    ```shell
+    python -m venv venv
+    ```
+   This command creates a new directory named `venv` in your project folder, where the virtual environment files are stored.
+
+4. Activate the virtual environment by running one of the following commands:
+    - On Windows:
+        ```shell
+        .\venv\Scripts\activate
+        ```
+    - On Unix or MacOS:
+        ```shell
+        source venv/bin/activate
+        ```
+   After activation, your command prompt or terminal will usually show the name of the activated virtual environment, indicating that it is currently active.
+
+
 ## Installing Dependencies
 
 Before starting your Streamlit app, you need to install any dependencies it requires. If you have a `requirements.txt` file listing all the needed packages:
