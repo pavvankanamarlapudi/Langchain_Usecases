@@ -1,4 +1,3 @@
-
 # Python 3.9 Setup and OpenAI API Key Configuration Guide
 
 This guide provides step-by-step instructions on how to set up Python 3.9, generate an OpenAI API key, configure it in your PC's environment variables, and start a Streamlit app.
@@ -37,4 +36,13 @@ Before starting your Streamlit app, you need to install any dependencies it requ
     ```shell
     pip install -r requirements.txt
     ```
+## Starting a CSV Chat App
 
+1. With Streamlit installed, and your `app.py` file ready, you can now start your Streamlit app.
+2. Open a command prompt or terminal.
+3. Navigate to the directory that contains your `app.py` file.
+4. Execute the command below to launch the Streamlit app:
+    ```shell
+    streamlit run app.py
+    ```
+5. Your default web browser will automatically open to the address where your Streamlit app is running, usually `http://localhost:8501`.
