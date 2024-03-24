@@ -10,7 +10,9 @@ from streamlit_chat import message
 
 
 
-st.title("Chat with CSV File using OpenAI LLM")
+st.title("Chat with your Uploaded CSV")
+user_avatar = "👤" 
+bot_avatar = "🤖" 
 
 uploaded_file = st.sidebar.file_uploader("Upload your Data", type="csv")
 
@@ -63,5 +65,5 @@ if uploaded_file:
     if st.session_state['generated']:
         with response_container:
             for i in range(len(st.session_state['generated'])):
-                message(st.session_state["past"][i], is_user=True, key=str(i) + '_user', avatar_style="big-smile")
-                message(st.session_state["generated"][i], key=str(i), avatar_style="thumbs")
+                message(st.session_state["past"][i], is_user=True, key=str(i) + '_user', avatar_style="personas",seed='Aneka')
+                message(st.session_state["generated"][i], key=str(i), avatar_style="bottts")
