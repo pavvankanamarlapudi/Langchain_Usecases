@@ -127,6 +127,7 @@ venv/
 ENV/
 env.bak/
 venv.bak/
+chat_env/
 
 # Spyder project settings
 .spyderproject
@@ -160,7 +161,7 @@ cython_debug/
 #.idea/
 
 vectorstore/db_faiss/index.pkl
-.ipynb
+*.ipynb
 vectorstore/db_faiss/index.faiss
 app - Copy.py
 pandasai_app.py
